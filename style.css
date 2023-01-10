@@ -1,0 +1,280 @@
+body{
+    background-color: white;
+    font-family: 'Gilroy';
+}
+
+*{
+    font-family: 'Gilroy';
+    list-style: none;
+    text-decoration: none;
+    -webkit-user-select: none;      
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.container{
+    content: "";
+    clear: both;
+    display: table;
+    
+    position:absolute;
+    width: 360px;
+    height: 780px;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    background-color: rgb(85, 85, 196);
+}
+
+.container .app-title{
+    vertical-align: middle;
+    margin-top: 45px;
+    margin-bottom: 45px;
+    margin-left: 30%;
+  
+    color: #FFF;
+    align-self: center;
+}
+.budget-header{
+
+
+
+}
+
+.budget-header .balance{
+    margin-top: 45px;
+    margin-left: 20px;
+    color: #FFF;
+}
+
+budget-header .balance .title{
+    color: #FFF;
+    font-size: 2em;
+    font-family: 'Gilroy Bold';
+}
+
+.budget-header .balance .value{
+    color: #FFF;
+    font-size: 2em;
+    margin-top: 10px;
+    font-family: 'Gilroy Bold';
+}
+
+.budget-header .account{
+    display: block;
+    width: 310px;
+    margin: 35px auto 0;
+    line-height: 1.7em;
+    color: #FFF;
+
+    text-align: center;
+    
+}
+
+.budget-header .account .income, .chart, .outcome{
+    height: 50px;
+    display: inline-block;
+    width: 100px;
+    vertical-align: middle;
+}
+
+.budget-header .account .income .title{
+    color: #FFF;
+    opacity: 0.5;
+}
+
+.budget-header .account .income .income-total{
+    color: #FFF;
+    font-family: 'Gilroy Bold';
+}
+
+.budget-header .account .outcome .title{
+    color: #FFF;
+    opacity: 0.5;
+}
+.budget-header .account .outcome .outcome-total{
+    color: #FFF;
+}
+/*  */
+/* REMOVE SPINNERS FROM NUMBER INPUT */
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button, input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+
+
+.budget-dashboard{
+    position:-webkit-sticky;
+    align-self: center !important;
+    align-items: center !important;
+    display: block;
+    width: 360px;
+    height: 400px;
+    background-color: rgb(190, 164, 123);
+    margin-top: 35px;
+    /* border:#1a0034 solid 10px; */
+    
+   
+      
+}
+
+.dash-title{
+
+    display:inline-block;
+    color: #FFF;
+    align-self: center !important;
+    /* border: #FFF solid; */
+    font-size: 1.7em;
+    margin-left:30%;
+    margin-top: 15px;
+    margin-bottom: 15px;
+
+    font-family: 'Gilroy Bold';
+}
+
+
+
+
+
+
+
+.hide{
+    display: none;
+}
+
+.budget-dashboard input{ 
+    /* MAKE INPUT SELECTABLE */
+    background-color: #FFF solid 10px;
+    -webkit-user-select: auto;      
+    -moz-user-select: auto;
+    -ms-user-select: auto;
+    user-select: auto;
+    position:relative;
+    /* display: block; */
+    width: 360px;
+    bottom: 0;
+    border: 5px solid rgb(32, 30, 30);
+}
+
+/* ////////// ALL //////////// */ 
+
+
+/* /////// INCOME /////// */ 
+#income{
+    /* width: 360px;
+    height: 339px; */
+    border: black solid 10 px;
+    position: relative;
+}
+
+
+
+.input *{
+    display: inline-block;
+    vertical-align: middle;
+}
+
+#income-title-input{
+    height: 40px;
+    width : 150px;
+    padding-left: 10px;
+    font-size: 1.2em;
+    font-family: 'Gilroy';
+    
+    /* margin: 5px; */
+    margin-left: 5px;
+    border-radius: 10px 0 0 10px;
+    border: none;
+}
+
+#income-amount-input{
+    height: 40px;
+    width : 110px;
+    padding-left: 20px;
+    font-size: 1.2em;
+    font-family: 'Gilroy';
+    margin: 5px;
+    margin-left: 1px;
+    border-radius: 0 10px 10px 0;
+    border: none;
+}
+#addx {
+    background-image: url("icon.png");
+    background-size:contain;
+    width: 40px;
+    height: 40px;
+    border-radius: 15px 15px 15px 15px;
+
+    /* cursor: pointer; */
+    /* object-fit:; */
+
+}
+
+#x1{
+
+    height: 35px;
+    width : 80px;
+    text-align: center;
+    font-size: 1.2em;
+    font-family: 'Gilroy';
+    border-radius: 15px 15px 15px 15px;
+
+}
+
+#adcome{   height: 40px;
+    width :auto;
+    padding-left: 1px;
+    font-size: 1.5em;
+    text-align: center;
+    font-family: 'Gilroy';
+    margin: 5px;
+    margin-left: 1px;
+    color: #FFF;
+    background-color: rgb(77, 102, 102);
+    border-radius: 15px 15px 15px 15px;
+    /* border: 2px solid red;  */
+    align-self: center; }
+
+#income .input .add-income img{
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+}
+/* abcd{
+
+} */
+#inp{
+    border: 2px solid red; 
+    align-self: center; 
+
+}
+
+ul {
+    background-color: whitesmoke;
+    width: auto ;
+    height:50%;
+
+    position:-webkit-sticky;
+    align-self: center;
+    top: 20px;
+    bottom: 20px;
+    left: 20px;
+    right: 20px;
+    overflow: scroll;
+    margin: 0;
+    padding: 15px;    
+    border: 2px solid #ccc;    
+    font-size: 16px;
+    /* border: green solid 10px !important; */
+    font-family: Arial, sans-serif;    
+    /* // Again, this is where the magic happens */
+    -webkit-overflow-scrolling: touch;
+  }
+  
+  li {
+    padding: 10px 20px;    
+    border: 2px solid #ccc;
+  }
